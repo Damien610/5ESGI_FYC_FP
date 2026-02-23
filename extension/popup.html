@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-area">
+            <img src="assets/icon/icon16.png" alt="logo">
+            <h1>Ollama <span>Summarist</span></h1>
+        </div>
+        <div class="status-dot" id="status-dot" title="Ollama Status"></div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="user-query">Consigne personnalisée</label>
+            <textarea id="user-query" placeholder="Ex: Résume en 3 points clés..."></textarea>
+        </div>
+
+        <button id="btn-send">
+            <span id="btn-text">Analyser la page</span>
+        </button>
+
+        <div id="result-container" class="result-card hidden">
+            <div class="result-header">
+                <span class="icon">✨</span>
+                <label>Intelligence Artificielle</label>
+            </div>
+            <div id="result">
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

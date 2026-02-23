@@ -1,0 +1,23 @@
+{
+    "name": "mcp-summarize-serveur",
+    "version": "1.0.0",
+    "description": "Serveur MCP + Bridge HTTP pour résumer et extraires des mots clés de page web",
+    "type": "module",
+    "main": "bridge.js",
+    "scripts": {
+        "start": "node bridge.js",
+        "mcp": "node index.js",
+        "dev": "node --watch bridge.js"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^0.5.0",
+        "cors": "^2.8.5",
+        "express": "^4.22.1",
+        "ollama": "^0.6.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "author": "Damien",
+    "license": "MIT"
+}

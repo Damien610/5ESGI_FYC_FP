@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Ollama Summarist",
+    "version": "1.0",
+    "description": "Résumez n'importe quelle page avec l'IA locale",
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "host_permissions": [
+        "http://127.0.0.1:3000/*",
+        "http://localhost:3000/*"
+    ]
+}
